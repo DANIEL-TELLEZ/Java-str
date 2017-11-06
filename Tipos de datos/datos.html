@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tipos de datos </title>
+</head>
+<body>
+	<h1>Nunber</h1>
+	<p id="n1"></p>
+	<p id="n2"></p>
+
+	<h1>Number propiedades</h1>
+
+	<p id="n3"></p>
+	<p id="n4"></p>	
+	<p id="n5"></p>
+	<p id="n6"></p>
+	<p id="n7"></p>
+	<p id="n8"></p>
+	<p id="n9"></p>
+
+	<h1>Nunber metodos</h1>
+
+	<p id="n10"></p>
+	<p id="n11"></p>
+	<p id="n12"></p>
+	<p id="n13"></p>
+	<p id="n14"></p>
+
+</body>
+ <script>
+ 	//definicion de nunbers.
+
+ 	var numero1=2500; // numero sin decimales.
+ 	var numero2=34.290//numero con decimales.
+
+ 	document.getElementById('n1').innerHTML=numero1;
+ 	document.getElementById('n2').innerHTML=numero2;
+
+
+ 	//propiedades de nunber.
+
+ 	var numero3=23434;
+ 	document.getElementById("n3").innerHTML=numero3.constructor; //La propiedad contructoe retorna la funcion nativa que crea.
+
+ 	document.getElementById("n4").innerHTML= Number.MAX_VALUE; // la propiedad MAX_VALUE  retorna el numero maximo que se puede usar en javasScript.
+
+ 	document.getElementById("n5").innerHTML= Number.MIN_VALUE;  // la propiedad MIN_VALUE  retorna el numero minimo que se puede usar en javasScript.
+
+ 	document.getElementById("n6").innerHTML= Number.NEGATIVE_INFINITY; // la propiedad NEGATIVE_INFINITY Retorna un negativo infinito.
+
+ 	document.getElementById("n7").innerHTML= Number.NaN; // La propiedad NaN retorna un numero ilegal.
+ 	document.getElementById("n8").innerHTML= Number.POSITIVE_INFINITY; //La propiedad  POSITOVE_INFINIT  retorna un positivo infinito.
+
+ 	Number.prototype.metodoNumerico=function(){//La propiedad prototype permite crear un nuevo metodo para manipular numeros.
+ 		return this*4/2;
+
+ 	}
+
+ 	var numero4=25;
+ 	document.getElementById("n9").innerHTML=numero4.metodoNumerico();
+
+ 	// Metodos de number.
+
+ 	var numero5=26.57;
+ 	document.getElementById("n10").innerHTML=numero5.toExponential(); //convierte un numero a exorecion exponencial.
+
+ 	var numero6=147854243;
+
+ 	document.getElementById("n11").innerHTML=numero6.toFixed(3);//Recorta el numero de digitos de un mumero y lo convierte en string.
+ 	var numero7=23.5567;
+ 	document.getElementById("n12").innerHTML=numero7.toPrecision(2);//DA formato a un numero para una longitud de numeros n.
+
+ 	var numero8=3.1416;
+ 	document.getElementById("n13").innerHTML=numero8.toString();//convierte un numero en cadena.
+
+ 	var numero10=5000;
+ 	document.getElementById("n14").innerHTML=numero10.valueOf(); //Devuelve el valor simpple de un numero.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 	
+
+
+ </script>
+
+
+</html>

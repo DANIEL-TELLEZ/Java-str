@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objetos</title>
+</head>
+<body>
+
+	<h1>Objetos</h1>
+
+	<h1>Articulo 1</h1>
+
+	<p id="codigo1"></p>
+	<p id="nombre1"></p>
+	<p id="precio1"></p>
+
+	<h1>Articulo 2</h1>
+
+	<p id="codigo2"></p>
+	<p id="nombre2"></p>
+	<p id="precio2"></p>
+
+	<h1>Articulo 3</h1>
+
+	<p id="codigo3"></p>
+	<p id="nombre3"></p>
+	<p id="precio3"></p>
+
+</body>
+
+<script >
+	//primera forma para crear un obgeto
+	var articulo1={
+		codigo:"0001",
+		nombre:"Celular",
+		precio:50000
+	}
+
+	//segunda forma para crear un objeto
+
+	var articulo2= new  Object();
+	articulo2.codigo="002";
+	articulo2.nombre= "tabla";
+	articulo2.precio= 70000;
+
+	// Tercera forma para crear un objeto
+
+	function articulo3(codigo, nombre, precio){
+		this.codigo= codigo;
+		this.nombre= nombre;
+		this.precio= precio;
+	}
+
+		var articulo3= new articulo3("003","compu",4500000);
+
+		//acceder a las propuiiedades de los objetos para ,ostrarlas
+
+		document.getElementById('codigo1').innerHTML=articulo1.codigo;
+		document.getElementById('nombre1').innerHTML=articulo1.nombre;
+		document.getElementById('precio1').innerHTML=articulo1.precio;
+
+		document.getElementById('codigo2').innerHTML=articulo2.codigo;
+		document.getElementById('nombre2').innerHTML=articulo2.nombre;
+		document.getElementById('precio2').innerHTML=articulo2.precio;
+
+
+		document.getElementById('codigo3').innerHTML=articulo3.codigo;
+		document.getElementById('nombre3').innerHTML=articulo3.nombre;
+		document.getElementById('precio3').innerHTML=articulo3.precio;
+
+
+		
+
+	
+
+
+
+
+
+</script>
+</html>
