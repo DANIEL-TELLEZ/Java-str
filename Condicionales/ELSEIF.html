@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>ELSE IF</h1>
+
+	<P id="color"></P>
+
+	<button onclick="verificarColor()">verificarColor</button>
+
+
+
+</body>
+
+<script >
+
+	var color="azul";
+
+	function verificarColor(){
+		if(color=="rojo"){
+			document.getElementById('color').innerHTML="El color es rojo";
+
+
+		}else if(color=="azul"){
+			document.getElementById('color').innerHTML="El color es azul";
+
+
+		}else{
+			document.getElementById('color').innerHTML="Sin Color";
+
+		}
+
+
+	}
+	
+
+</script>
+</html>

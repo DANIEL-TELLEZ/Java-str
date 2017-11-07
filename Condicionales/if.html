@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>if</title>
+</head>
+<body>
+	<h1>if</h1>
+
+	<p>Total de la compra</p>
+	<p id="desc"></p>
+
+	<button onclick="descuento()">Descuento</button>
+
+</body>
+<script>
+	var total=5000;
+	function descuento(){
+		if(total>2000) {
+			document.getElementById('desc').innerHTML="Gano descauento!!!";
+		}
+	}
+	
+
+</script>
+</html>
