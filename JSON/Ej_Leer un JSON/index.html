@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leer un json</title>
+</head>
+<body>
+	<p id="empresas"></p>
+
+</body>
+
+<script type="text/javascript">
+	var jsonText= '{"empresas":['+
+
+	'{"nit":"3432-1","nombre":"TCC","telefono":"3145339914","email":"tcc@gmail.com"},'+
+
+	'{"nit":"2564-1","nombre":"NOKIA","telefono":"2365895658","email":"nokia@gmail.com"},'+
+
+	'{"nit":"2569-1","nombre":"MOVISTAR","telefono":"2154623654","email":"movis@gmail.com"},'+
+
+	'{"nit":"1233-1","nombre":"EXITO","telefono":"1254869","email":"exito@gmail.com"},'+
+
+	'{"nit":"3432-1","nombre":"POSTOBON","telefono":"5265325","email":"pos@gmail.com"},'+
+
+	'{"nit":"3432-1","nombre":"PUMA","telefono":"2154856","email":"puma@gmail.com"},'+
+
+	'{"nit":"3432-1","nombre":"Mexichen","telefono":"1124568","email":"mex@gmail.com"},'+
+
+	'{"nit":"3432-1","nombre":"COMPAC","telefono":"2154632","email":"com@gmail.com"},'+
+
+	'{"nit":"3432-1","nombre":"ALCATEL","telefono":"354856325","email":"alca@gmail.com"},'+
+
+	'{"nit":"3432-1","nombre":"SONY","telefono":"3256847","email":"sony@gmail.com"}'+']}';
+
+	var jsObj=JSON.parse(jsonText);
+
+	function  leerJSON (json){
+	var out="__________Empresas_________<br>";
+	var i;
+	for(i=0;i<json.empresas.length;i++){
+
+		out+="Nit:"+json.empresas[i].nit+"-"+"Nombre:"+json.empresas[i].nombre+"-"+"Telefono:"+ json.empresas[i].telefono+"-"+"Email:"+json.empresas[i].email+"<br>";
+
+	}
+
+	document.getElementById("empresas").innerHTML=out;
+}
+	leerJSON(jsObj);	
+	
+</script>
+</html>

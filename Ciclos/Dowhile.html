@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>Do whie</h1>
+	<h1>Conteo del 50 añ cien</h1>
+
+	<p id="salida"></p>
+
+	<button onclick="conteo()">Conteo</button>
+
+
+
+</body>
+
+<script>
+
+	function conteo(){
+		var contador=50;
+		var texto="";
+		do{
+			texto+=contador+"<br>";
+			contador++;
+		}
+
+		while (contador<=100);
+
+		document.getElementById('salida').innerHTML= texto;
+	}
+
+
+	
+</script>
+
+
+</html>

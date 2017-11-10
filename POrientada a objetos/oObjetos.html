@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<h1>POO Javascript</h1>
+	<p id="saludo1"></p>
+	<p id="saludo2"></p>
+
+	<button onclick="funcion1()">Saludo1</button>
+
+	<button onclick="funcion2()">Saludo2</button>
+
+
+
+
+</body>
+<script >
+
+	function Persona (nombre,edad,ciudad,email){//definicion de la clase persona
+
+		//sintesisamos la variable.
+
+		this.nombre=nombre;
+		this.edad=edad;
+		this.ciudad=ciudad;
+		this.email=email;
+		//metodo saludar.
+
+		this.saludar=function(){
+			document.getElementById("saludo1").innerHTML="Hola mi nombre es "+this.nombre+"y mi edad es "+this.edad;
+		};
+
+
+	}
+
+
+	var persona=new Persona("carlos morales", "24","cartagena","carlo@gmail.com");
+
+	function funcion1(argument){
+		persona.saludar();
+	}
+
+	function funcion2(argument){
+		document.getElementById('saludo2').innerHTML="soy de "+persona.ciudad+"y mi E-mailes"
+	}
+ 
+
+	
+
+</script>
+</html>

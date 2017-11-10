@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>Try catch</h1>
+
+	<button  onclick=" funcion1()">Ejecutar funcion1</button>
+
+	<button  onclick=" funcion2()">Ejecutar funcion2</button>
+
+</body>
+<script >
+
+	function funcion1(){
+		try{
+			var numero1=50;
+			var numero=numero1+numero2;// no declaramos la variable 2 para que jenere el error.
+
+		}catch (error){
+			alert("existe un error"+"-"+error.message);
+		}
+	}
+function funcion2(){
+	try {
+		var persona=null;
+		var nombre=persona.nombre//Se esta tratando de acceder a un objeto null parra generar el error.
+
+
+	}catch (error){
+		alert("existe un error"+"-"+error.message);
+	}
+}
+
+
+
+
+	
+
+</script>
+</html>

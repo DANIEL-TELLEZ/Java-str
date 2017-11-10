@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos OnMouseDown_y_OnMouseUp</title>
+</head>
+<body>
+	<h1 id="texto" onmousedown="mouseDown()" onmouseup="mouseUp()">NexUniversity</h1>
+
+	<script type="text/javascript">
+		function mouseDown(){
+		document.getElementById("texto").style.color=	"green";
+		}
+
+		function mouseUp(){
+			document.getElementById("texto").style.color="yellow";
+		}
+
+
+	</script>
+
+</body>
+</html>
